@@ -1,0 +1,62 @@
+.root {
+	position: relative;
+	left: -120px;
+}
+
+.input {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 12px 20px;
+	padding-left: 42px;
+	width: 400px;
+	border-radius: 10px;
+	font-size: 16px;
+	transition: all 0.15s ease-in-out;
+
+	&:focus {
+		border: 1px solid rgba(0, 0, 0, 0.2);
+	}
+
+	@media (max-width: 810px) {
+		width: 200px;
+		height: 15px;
+		margin-top: 30px;
+		margin-left: 230px;
+	}
+}
+
+.icon {
+	width: 22px;
+	height: 22px;
+	opacity: 0.3;
+	position: absolute;
+	left: 14px;
+	top: 12px;
+
+	@media (max-width: 810px) {
+		width: 18px;
+		height: 18px;
+		left: 240px;
+		top: 35px;
+	}
+}
+
+.clearIcon {
+	width: 18px;
+	height: 18px;
+	opacity: 0.3;
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	cursor: pointer;
+
+	@media (max-width: 810px) {
+		width: 18px;
+		height: 18px;
+		left: 400px;
+		top: 33px;
+	}
+
+	&:hover {
+		opacity: 0.8;
+	}
+}
